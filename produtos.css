@@ -1,0 +1,53 @@
+/* Estilos específicos para a página de produtos */
+.produtos {
+  margin-top: 2rem;
+}
+
+.produtos table {
+  background: var(--color-white);
+  width: 100%;
+  border-radius: var(--card-border-radius);
+  padding: var(--card-padding);
+  text-align: center;
+  box-shadow: var(--box-shadow);
+  transition: all 300ms ease;
+}
+
+.produtos table:hover {
+  box-shadow: none;
+}
+
+.produtos table th {
+  height: 2.8rem;
+  font-weight: 600;
+  text-align: left;
+  color: var(--color-dark);
+}
+
+.produtos table td {
+  height: 2.8rem;
+  border-bottom: 1px solid var(--color-light);
+  color: var(--color-dark-variant);
+  text-align: left;
+}
+
+.produtos table tr:last-child td {
+  border: none;
+}
+
+.produtos .btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: var(--border-radius-1);
+  transition: all 300ms ease;
+}
+
+.produtos .btn-primary {
+  color: var(--color-white);
+  background: var(--color-primary);
+}
+
+.produtos .btn-primary:hover {
+  background: var(--color-primary-variant);
+}
+

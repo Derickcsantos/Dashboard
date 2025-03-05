@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mensagens - Painel Administrativo</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mensagens.css">
+</head>
+<body>
+    <div class="container">
+        <aside>
+            <div class="top">
+                <div class="logo">
+                    <img src="./images/logo.jpeg" alt="Logo">
+                    <h2>PAINEL  <span class="danger"> ADM</span></h2>
+                </div>
+                <div class="close" id="close-btn">
+                    <span class="material-icons-sharp">close</span>
+                </div>
+            </div>
+
+            <div class="sidebar">
+                <a href="index.html">
+                    <span class="material-icons-sharp">grid_view</span>
+                    <h3>Dashboard</h3>
+                </a>
+                <a href="clientes.html">
+                    <span class="material-icons-sharp">person</span>
+                    <h3>Clientes</h3>
+                </a>
+                <a href="pedidos.html">
+                    <span class="material-icons-sharp">receipt_long</span>
+                    <h3>Pedidos</h3>
+                </a>
+                <a href="analise.html">
+                    <span class="material-icons-sharp">insights</span>
+                    <h3>Análises</h3>
+                </a>
+                <a href="mensagens.html" class="active">
+                    <span class="material-icons-sharp">mail_outline</span>
+                    <h3>Mensagens</h3>
+                    <span class="message-count">26</span>
+                </a>
+                <a href="produtos.html">
+                    <span class="material-icons-sharp">inventory</span>
+                    <h3>Produtos</h3>
+                </a>
+                <a href="relatorios.html">
+                    <span class="material-icons-sharp">report_gmailerrorred</span>
+                    <h3>Relatórios</h3>
+                </a>
+                <a href="configuracoes.html">
+                    <span class="material-icons-sharp">settings</span>
+                    <h3>Configurações</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">logout</span>
+                    <h3>Sair</h3>
+                </a>
+            </div>
+        </aside>
+
+        <main>
+            <h1>Mensagens</h1>
+
+            <div class="date">
+                <input type="date">
+            </div>
+
+            <div class="mensagens">
+                <h2>Caixa de Entrada</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Remetente</th>
+                            <th>Assunto</th>
+                            <th>Data</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>João Silva</td>
+                            <td>Dúvida sobre entrega</td>
+                            <td>01/05/2023</td>
+                            <td class="warning">Não lida</td>
+                            <td><a href="#" class="btn btn-primary">Ler</a></td>
+                        </tr>
+                        <tr>
+                            <td>Maria Santos</td>
+                            <td>Reclamação de produto</td>
+                            <td>30/04/2023</td>
+                            <td class="warning">Não lida</td>
+                            <td><a href="#" class="btn btn-primary">Ler</a></td>
+                        </tr>
+                        <tr>
+                            <td>Carlos Oliveira</td>
+                            <td>Solicitação de reembolso</td>
+                            <td>29/04/2023</td>
+                            <td class="success">Respondida</td>
+                            <td><a href="#" class="btn btn-primary">Ver</a></td>
+                        </tr>
+                        <tr>
+                            <td>Ana Rodrigues</td>
+                            <td>Elogio ao atendimento</td>
+                            <td>28/04/2023</td>
+                            <td class="success">Lida</td>
+                            <td><a href="#" class="btn btn-primary">Ver</a></td>
+                        </tr>
+                        <tr>
+                            <td>Pedro Ferreira</td>
+                            <td>Pergunta sobre garantia</td>
+                            <td>27/04/2023</td>
+                            <td class="warning">Não lida</td>
+                            <td><a href="#" class="btn btn-primary">Ler</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <a href="#">Ver Todas as Mensagens</a>
+            </div>
+        </main>
+
+        <div class="right">
+            <div class="top">
+                <button id="menu-btn">
+                    <span class="material-icons-sharp">menu</span>
+                </button>
+                <div class="theme-toggler">
+                    <span class="material-icons-sharp active">light_mode</span>
+                    <span class="material-icons-sharp">dark_mode</span>
+                </div>
+                <div class="profile">
+                    <div class="info">
+                        <p>Olá, <b>Admin</b></p>
+                        <small class="text-muted">Administrador</small>
+                    </div>
+                    <div class="profile-photo">
+                        <img src="./images/profile-1.jpg" alt="Foto de Perfil">
+                    </div>
+                </div>
+            </div>
+
+            <div class="recent-updates">
+                <h2>Mensagens Recentes</h2>
+                <div class="updates">
+                    <div class="update">
+                        <div class="profile-photo">
+                            <img src="./images/profile-2.jpg" alt="Foto de Perfil">
+                        </div>
+                        <div class="message">
+                            <p><b>João Silva</b> enviou uma dúvida sobre entrega</p>
+                            <small class="text-muted">2 minutos atrás</small>
+                        </div>
+                    </div>
+                    <div class="update">
+                        <div class="profile-photo">
+                            <img src="./images/profile-3.jpg" alt="Foto de Perfil">
+                        </div>
+                        <div class="message">
+                            <p><b>Maria Santos</b> fez uma reclamação de produto</p>
+                            <small class="text-muted">5 minutos atrás</small>
+                        </div>
+                    </div>
+                    <div class="update">
+                        <div class="profile-photo">
+                            <img src="./images/profile-4.jpg" alt="Foto de Perfil">
+                        </div>
+                        <div class="message">
+                            <p><b>Carlos Oliveira</b> solicitou um reembolso</p>
+                            <small class="text-muted">10 minutos atrás</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sales-analytics">
+                <h2>Análise de Mensagens</h2>
+                <div class="item online">
+                    <div class="icon">
+                        <span class="material-symbols-outlined">mail</span>
+                    </div>
+                    <div class="right">
+                        <div class="info">
+                            <h3>Mensagens Recebidas</h3>
+                            <small class="text-muted">Últimas 24 horas</small>
+                        </div>
+                        <h5 class="success">+39%</h5>
+                        <h3>26</h3>
+                    </div>
+                </div>
+                <div class="item offline">
+                    <div class="icon">
+                        <span class="material-symbols-outlined">reply</span>
+                    </div>
+                    <div class="right">
+                        <div class="info">
+                            <h3>Mensagens Respondidas</h3>
+                            <small class="text-muted">Últimas 24 horas</small>
+                        </div>
+                        <h5 class="danger">-17%</h5>
+                        <h3>15</h3>
+                    </div>
+                </div>
+                <div class="item customers">
+                    <div class="icon">
+                        <span class="material-symbols-outlined">schedule</span>
+                    </div>
+                    <div class="right">
+                        <div class="info">
+                            <h3>Tempo Médio de Resposta</h3>
+                            <small class="text-muted">Últimas 24 horas</small>
+                        </div>
+                        <h5 class="success">-25%</h5>
+                        <h3>2h</h3>
+                    </div>
+                </div>
+                <div class="item add-product">
+                    <div>
+                        <span class="material-symbols-outlined">add</span>
+                        <h3>Nova Mensagem</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="mensagens.js"></script>
+</body>
+</html>
+
